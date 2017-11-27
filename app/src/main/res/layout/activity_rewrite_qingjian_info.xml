@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:drawableLeft="@drawable/navbar_icon_back"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/title_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+            />
+
+            <TextView
+                android:id="@+id/title_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/title_setting"
+                android:layout_toRightOf="@id/title_back"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="填写信息"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_eeeeee"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="新郎姓名"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="请输入新郎姓名"
+                android:singleLine="true"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:ellipsize="end"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="新娘姓名"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <EditText
+                android:id="@+id/etName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:singleLine="true"
+                android:hint="请输入新娘姓名"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:ellipsize="end"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <include layout="@layout/line_ver"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="婚宴时间"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请选择婚宴时间"
+                android:drawableRight="@drawable/icon_right_nav"
+                android:drawableEnd="@drawable/icon_right_nav"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="酒店名称"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <EditText
+                android:id="@+id/etHotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="请输入酒店名称"
+                android:singleLine="true"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:ellipsize="end"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="酒店地址"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <EditText
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请输入酒店地址"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="选择音乐"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingLeft="14dp"
+                android:paddingStart="14dp"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/tvMusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:hint="请选择音乐"
+                android:drawableRight="@drawable/icon_right_nav"
+                android:drawableEnd="@drawable/icon_right_nav"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/light_black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

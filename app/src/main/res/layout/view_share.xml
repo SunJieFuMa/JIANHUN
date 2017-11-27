@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/shareWechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ssdk_wechat"
+            android:text="微信"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/light_black"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/shareWechatmoments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ssdk_wechatmoments"
+            android:text="朋友圈"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/light_black"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/shareSina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ssdk_sinaweibo"
+            android:text="微博"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/light_black"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/shareQQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ssdk_qq"
+            android:text="QQ"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/light_black"/>
+
+    </FrameLayout>
+
+</LinearLayout>

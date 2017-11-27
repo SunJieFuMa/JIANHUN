@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/lib_toolbar"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_eeeeee"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="14dp">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入桌名(如新郎大学同学桌)"
+                    android:textColor="@color/c_ff3257"
+                    android:textColorHint="@color/c_9a9a9a"
+                    android:textSize="16sp"/>
+
+                <include layout="@layout/line_ver"/>
+
+                <EditText
+                    android:id="@+id/etList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="点击输入宾客信息，姓名之间用‘，’分开"
+                    android:inputType="textMultiLine"
+                    android:minHeight="120dp"
+                    android:padding="0dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/c_9a9a9a"
+                    android:textSize="15sp"/>
+                <Button
+                    android:id="@+id/btn_contacts"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right"
+                    android:padding="10dp"
+                    android:background="#fe4365"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从通讯录中导入"
+                />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c_eeeeee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp"
+        android:background="@xml/xml_white_3rbg">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/c_ff3257"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <include layout="@layout/line_ver" />
+
+        <TextView
+            android:id="@+id/tvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="90dp"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingLeft="12dp"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/c_ff3257"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <ImageView
+                android:id="@+id/ivDel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_del"/>
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_edit"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,2 @@
+include ':app', ':library', ':demo', ':areaselector', ':litepal', ':demo2', ':jcvideoplayer-lib', ':multi-image-selector'
+

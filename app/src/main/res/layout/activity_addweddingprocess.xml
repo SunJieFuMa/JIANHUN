@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/lib_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_eeeeee"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.mhh.lib.widget.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_view_height"
+                android:padding="10dp"
+                app:rv_type="rectangle">
+
+                <TextView
+                    android:id="@+id/vState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="流程类型："
+                    android:textColor="@color/c_ff4163" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/vState"
+                    android:layout_toEndOf="@+id/vState">
+
+                    <EditText
+                        android:id="@+id/tvProcess"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="42dp"
+                        android:background="@null"
+                        android:hint="输入流程类型"
+                        android:textColor="@color/light_black"
+                        android:textColorHint="@color/gray"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="5dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_gravity="bottom"
+                        android:background="@color/c_df667a"/>
+
+                </FrameLayout>
+
+            </com.mhh.lib.widget.RippleView>
+
+            <include layout="@layout/line_ver" />
+
+            <com.mhh.lib.widget.RippleView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_view_height"
+                android:padding="10dp"
+                app:rv_type="rectangle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="时间"
+                    android:textColor="@color/c_ff4163" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="200dp"
+                    android:gravity="center|end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableEnd="@drawable/icon_more"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/icon_more"
+                    android:text="0:00" />
+
+            </com.mhh.lib.widget.RippleView>
+
+            <include layout="@layout/line_ver" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_ff4163"
+                    android:layout_marginTop="5dp"
+                    android:text="事宜"/>
+
+                <EditText
+                    android:id="@+id/etThing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/c_9a9a9a"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:hint="输入具体事宜" />
+            </FrameLayout>
+
+            <include layout="@layout/line_ver" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/item_view_height"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="人员"
+                    android:textColor="@color/c_ff4163" />
+
+                <EditText
+                    android:id="@+id/etPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:hint="输入流程中的重要参与人员"
+                    android:textColorHint="@color/c_9a9a9a"
+                    android:gravity="left|center" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

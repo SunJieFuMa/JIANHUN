@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/view_item"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/cbx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@xml/xml_cbx"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@null"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:layout_marginBottom="6dp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"/>
+
+    <include layout="@layout/line_ver"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_height="1px"/>
+
+</FrameLayout>

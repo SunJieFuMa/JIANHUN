@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fl_shop_demo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_eeeeee"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.chantyou.janemarried.view.ShopDemoFilterView
+            android:id="@+id/fv_top_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <com.chantyou.janemarried.ui.shop.MyListView
+            android:id="@+id/lv_shop_demo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:paddingTop="15dp" />
+
+
+
+        　
+    </FrameLayout>
+</LinearLayout>

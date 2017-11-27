@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="DesignTheme" parent="Base.DesignTheme">
+    </style>
+
+    <style name="DesignTheme.Main" parent="Base.DesignTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style.Main</item>
+    </style>
+
+    <style name="Animation.Activity.Translucent.Style.Main" parent="@android:style/Animation.Translucent">
+        <!--<item name="android:windowEnterAnimation">@anim/base_slide_right_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/base_slide_right_out</item>-->
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <!--<item name="android:activityOpenExitAnimation">@anim/push_left_out</item>-->
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+        <!--<item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>-->
+    </style>
+
+    <style name="Base.DesignTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--<style name="Base.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <item name="windowActionBar">false</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <!--<item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>-->
+
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:statusBarColor" tools:targetApi="21">@color/colorAccent</item>-->
+        <!--<item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimaryDark</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>-->
+        <item name="android:actionMenuTextColor" tools:targetApi="11">@color/white</item>
+
+        <!--定义动画-->
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>-->
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="xdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>     <!-- 设置浮动窗口 -->
+        <item name="android:windowFrame">@null</item>         <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>                          <!-- 设置屏幕变暗 -->
+    </style>
+</resources>

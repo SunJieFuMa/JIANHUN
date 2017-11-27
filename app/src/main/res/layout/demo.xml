@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#000"
+             android:orientation="vertical">
+    <com.chantyou.janemarried.view.RoundImageView
+        android:id="@+id/ivbg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/adv_item_height"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="1.5dp"
+        android:layout_marginTop="1dp"
+        android:minHeight="@dimen/adv_item_height"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:borderRadius="20dp"
+        app:type="round"/>
+</FrameLayout>

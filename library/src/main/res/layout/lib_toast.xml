@@ -1,0 +1,33 @@
+ <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:background="@drawable/round_toast" >
+    <ImageView 
+        android:id="@+id/toast"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"  />
+    <TextView
+        android:id="@+id/toast_tv"
+        android:layout_toRightOf="@+id/toast"
+        android:layout_toEndOf="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>

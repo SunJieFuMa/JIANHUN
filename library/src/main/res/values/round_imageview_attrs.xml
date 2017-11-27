@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+    	<attr name="border_width" format="reference|dimension" />
+    	<attr name="border_radius" format="reference|dimension"/>
+    	<attr name="border_color" format="reference|color"/>
+    	<attr name="hoverColor" format="reference|color"/>
+    	<attr name="border_overlay" format="boolean"/>
+    </declare-styleable>
+</resources>

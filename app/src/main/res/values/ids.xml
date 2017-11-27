@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页菜单显示/隐藏ID -->
+    <item name="id_main_menu" type="id" />
+
+    <!-- Custome TabActivity -->
+    <item name="id_tagindex" type="id" />
+    <item name="rtabs" type="id" />
+    <item name="tabcontent" type="id" />
+    <item name="tabhost" type="id" />
+
+    <item name="ev_sms" type="id" />
+    <item name="menu_select" type="id" />
+    <item name="login_back" type="id" />
+    <item name="city_all" type="id" />
+    <item name="event_runcode" type="id" />
+    <item name="event_swip_cal" type="id" />
+    <item name="syn_cal" type="id" />
+    <item name="evevnt_auth_code" type="id" />
+    <item name="auth_wechat" type="id" />
+    <item name="user_aouth" type="id" />
+
+    <!-- 网络请求 id -->
+    <item name="user_reg" type="id" />
+    <item name="user_reg2" type="id" />
+    <item name="user_login" type="id" />
+    <item name="user_signout" type="id" />
+    <item name="get_atoken" type="id" />
+    <item name="user_info" type="id" />
+    <item name="user_update_push" type="id" />
+    <item name="user_edit" type="id" />
+    <item name="marry_day_edit" type="id" />
+
+    <item name="user_findpwd" type="id" />
+    <item name="marry_addprocess" type="id" />
+    <item name="marry_allprocess" type="id" />
+    <item name="marry_deloneprocess" type="id" />
+    <item name="gifts_queryall" type="id" />
+    <item name="gifts_addone" type="id" />
+    <item name="gifts_delone" type="id" />
+    <item name="pchlist_all" type="id" />
+    <item name="pchlist_add" type="id" />
+    <item name="pchlist_del" type="id" />
+    <item name="news_detail" type="id" />
+
+    <item name="task_useraddlist" type="id" />
+    <item name="task_useradd" type="id" />
+    <item name="task_userdel" type="id" />
+    <item name="task_useredit" type="id" />
+    <item name="task_usercom" type="id" />
+    <item name="task_my" type="id" />
+
+    <item name="speech_add" type="id" />
+    <item name="speech_del" type="id" />
+    <item name="speech_list" type="id" />
+
+    <item name="budget_all" type="id" />
+    <item name="budget_get" type="id" />
+    <item name="budget_edit" type="id" />
+    <item name="budget_compute" type="id" />
+
+    <item name="fortune_find" type="id" />
+
+    <item name="card_save" type="id" />
+    <item name="card_info" type="id" />
+    <item name="card_getinfo" type="id" />
+
+    <item name="guestlist_all" type="id" />
+    <item name="guestlist_add" type="id" />
+    <item name="guestlist_del" type="id" />
+
+    <item name="product_cate" type="id" />
+    <item name="product_bytype" type="id" />
+    <item name="product_detail" type="id" />
+    <item name="product_comment" type="id" />
+    <item name="product_favorite" type="id" />
+    <item name="product_findfavorite" type="id" />
+    <item name="product_findcomment" type="id" />
+
+    <item name="topic_addedit" type="id" />
+    <item name="topic_best" type="id" />
+    <item name="topic_latest" type="id" />
+    <item name="topic_info" type="id" />
+    <item name="topic_collect" type="id" />
+    <item name="topic_delcollect" type="id" />
+    <item name="topic_comment" type="id" />
+    <item name="topic_comment_list" type="id" />
+
+    <item name="phases_all" type="id" />
+
+    <item name="tags_inphase" type="id" />
+    <item name="tags_addone" type="id" />
+    <item name="tag_id" type="id" />
+
+    <item name="topic_myall" type="id" />
+    <item name="topic_mycollect" type="id" />
+
+
+    <item name="home_page" type="id" />
+
+    <item name="iv" type="id" />
+    <item name="tv1" type="id" />
+    <item name="tv2" type="id" />
+
+
+    <!--商铺-->
+    <item name="shop_list" type="id" />
+    <item name="shop_info" type="id" />
+    <item name="shop_ad_list" type="id" />
+    <item name="shop_package" type="id" />
+    <item name="shop_follow" type="id" />
+    <item name="shop_dis_follow" type="id" />
+    <item name="shop_demo" type="id" />
+    <item name="shop_package_info" type="id" />
+    <item name="shop_demo_info" type="id" />
+    <item name="shop_my_collect" type="id" />
+
+    <item name="city_county" type="id" />
+    <item name="shop_appointment" type="id" />
+
+
+    <item name="shop_comment_list" type="id" />
+    <item name="shop_comment_add" type="id" />
+
+    <item name="check_version" type="id" />
+</resources>

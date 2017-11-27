@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_ff4163">
+
+            <include layout="@layout/lib_toolbar" />
+
+            <TextView
+                android:id="@+id/tvQYM"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="查年月"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"
+                android:layout_gravity="center_vertical|end"/>
+        </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/title_height"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_f8f8f8"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/c_ff4163">
+
+                <TextView
+                    android:id="@+id/tvMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="46dp"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="日"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="一"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="二"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="三"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="四"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="五"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:text="六"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v4.view.ViewPager>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/c_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSelDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_ff3257"
+                    android:layout_gravity="center_vertical"
+                    android:text="2015年11月21日"/>
+
+                <TextView
+                    android:id="@+id/tvSelDaySuit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="1dp"
+                    android:background="@xml/xml_lr_round3"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:paddingBottom="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvDayInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="2015年11月21日"/>
+
+            <TextView
+                android:id="@+id/tvSuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_808080"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="12dp"
+                android:drawableLeft="@drawable/icon_yi"
+                android:drawableStart="@drawable/icon_yi"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_vertical"
+                android:text="2015年11月21日"/>
+
+            <TextView
+                android:id="@+id/tvAvoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_808080"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="12dp"
+                android:drawableLeft="@drawable/icon_ji"
+                android:drawableStart="@drawable/icon_ji"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_vertical"
+                android:text="2015年11月21日"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

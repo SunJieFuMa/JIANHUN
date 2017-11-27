@@ -1,0 +1,10 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+ 
+[remote "origin"]
+	url = https://zwx_lucky@bitbucket.org/zwx_lucky/jianhun_android.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

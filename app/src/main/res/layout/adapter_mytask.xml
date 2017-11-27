@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/light_black"
+        android:textSize="15sp"
+        android:drawablePadding="10dp"
+        android:text="确定结婚"
+        android:drawableStart="@drawable/round_item1"
+        android:drawableLeft="@drawable/round_item1"
+        android:paddingLeft="14dp"
+        android:paddingStart="14dp"
+        android:paddingRight="14dp"
+        android:paddingEnd="14dp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <com.mhh.lib.widget.ListViewEx
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:dividerHeight="0px"/>
+
+</LinearLayout>

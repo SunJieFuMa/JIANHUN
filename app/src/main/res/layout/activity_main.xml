@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_backdrop_height"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <!--app:contentScrim="?attr/colorPrimary"-->
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:elevation="0dp"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <ImageView
+                        android:id="@+id/backdrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="false"
+                        android:background="#ffffff"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0.7"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_photo"/><!--不加参数scaleType的话就不会填充父控件，也不知道怎么回事-->
+
+                    <LinearLayout
+                        android:id="@+id/ll_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:clipChildren="false">
+
+                        </android.support.v4.view.ViewPager>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/vMarryStep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvMarryStep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@xml/xml_lr_round"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"/>
+
+                        <View
+                            android:layout_width="@dimen/main_line_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="24.5dp"
+                            android:layout_marginStart="24.5dp"
+                            android:layout_marginTop="28dp"
+                            android:background="@drawable/main_line"
+                            android:visibility="gone"/>
+
+                    </FrameLayout>
+
+                    <include
+                        layout="@layout/lib_toolbar"/>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include
+                layout="@layout/lv_refreshmoreload_recyclerview"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/view_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <CheckBox
+            android:id="@+id/cbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:button="@xml/xml_cbx"
+            android:background="@null"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp" />
+
+        <ImageView
+            android:id="@+id/ivOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical|end"
+            android:src="@drawable/icon_close" />
+
+    </FrameLayout>
+
+    <include layout="@layout/line_ver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <com.mhh.lib.widget.ListViewEx
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"/>
+</LinearLayout>

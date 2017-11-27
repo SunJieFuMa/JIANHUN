@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">appName</string>
+    <string name="fmt_money">￥%1$s</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="choose_photo">选择图片</string>
+    <string name="action_camera">拍照</string>
+    <string name="action_album_choose">相册选取</string>
+    <string name="delpic">删除图片</string>
+</resources>

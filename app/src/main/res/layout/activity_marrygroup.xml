@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <include layout="@layout/lib_toolbar" />
+
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn1"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@xml/xml_tab_bg_left"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/choice"
+                android:textColor="@color/xml_tab_txtcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbtn2"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@xml/xml_tab_bg_right"
+                android:button="@null"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/latest"
+                android:textColor="@color/xml_tab_txtcolor"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_f8f8f8"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

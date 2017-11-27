@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:state_pressed="false">
+        <layer-list >
+    
+    <item android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp">
+        <shape android:shape="rectangle"
+            >
+            <corners android:radius="3dp"/>
+            <gradient android:type="linear"
+                android:startColor="#eaeaea"
+                android:endColor="#bababa"
+                android:angle="270" />
+        </shape>
+    </item>
+    
+    <item android:left="5.8dp"
+        android:top="5.8dp"
+        android:right="5.8dp"
+        android:bottom="5.8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <gradient android:type="linear"
+                android:startColor="#fafafa"
+                android:endColor="#c6c6c6"
+                android:centerColor="#f2f2f2"
+                android:angle="270" />
+        </shape>
+    </item>
+
+</layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list >
+    
+    <item android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp">
+        <shape android:shape="rectangle"
+            >
+            <corners android:radius="3dp"/>
+            <gradient android:type="linear"
+                android:startColor="#bababa"
+                android:endColor="#eaeaea"
+                android:angle="270" />
+        </shape>
+    </item>
+    
+    <item android:left="5.8dp"
+        android:top="5.8dp"
+        android:right="5.8dp"
+        android:bottom="5.8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="3dp"/>
+            <gradient android:type="linear"
+                android:startColor="#c6c6c6"
+                android:endColor="#f4f4f4"
+                android:centerColor="#ededed"
+                android:angle="270" />
+        </shape>
+    </item>
+
+</layer-list>
+    </item>
+
+</selector>

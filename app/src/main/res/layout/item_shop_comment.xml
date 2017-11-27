@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp">
+
+        <com.mhh.lib.view.CircleImageView
+            android:id="@+id/ivHead"
+            android:layout_marginTop="4dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/defaulthead"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivHead"
+            android:layout_toEndOf="@+id/ivHead"
+            android:layout_marginTop="3dp"
+            android:textSize="16sp"
+            android:text="faseafeeaefaf"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textSize="13sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tvIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_alignStart="@+id/tvName"
+            android:textSize="14sp"
+            android:textColor="@color/light_black" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_ver" />
+</LinearLayout>

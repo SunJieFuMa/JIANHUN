@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/lib_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/c_eeeeee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/vItem1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Could This Be Love"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:id="@+id/vItem2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Good Time"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:id="@+id/vItem3"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Luv Letter"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:id="@+id/vItem4"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="今天你要嫁给我"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+        <LinearLayout
+            android:id="@+id/vItem5"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/iv"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@id/tv1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Marry You"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="14dp"
+                android:paddingEnd="14dp"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/line_ver" />
+
+    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

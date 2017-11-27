@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/lib_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/c_eeeeee"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textColor="@color/light_black"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            android:paddingEnd="12dp"/>
+
+        <FrameLayout
+            android:id="@+id/vCtime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成时间"
+                android:drawableLeft="@drawable/task_completetime"
+                android:drawableStart="@drawable/task_completetime"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tvCtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/icon_right_nav"
+                android:drawableEnd="@drawable/icon_right_nav"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:drawablePadding="5dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/vTtime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒时间"
+                android:drawableLeft="@drawable/task_tipstime"
+                android:drawableStart="@drawable/task_tipstime"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/tvTtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/icon_right_nav"
+                android:drawableEnd="@drawable/icon_right_nav"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                android:drawablePadding="5dp"/>
+
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/vTyusuan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余预算"
+                android:drawableLeft="@drawable/task_tipstime"
+                android:drawableStart="@drawable/task_tipstime"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/gray"/>
+
+            <EditText
+                android:id="@+id/edt_yusuan"
+                android:layout_marginLeft="20dp"
+                android:background="#11000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/light_black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="12dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加备注"
+                    android:drawableLeft="@drawable/task_addbz"
+                    android:drawableStart="@drawable/task_addbz"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/gray"/>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/etTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:minHeight="80dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="12dp"
+                android:paddingStart="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/light_black"
+                android:paddingEnd="12dp"
+                android:gravity="top"
+                android:maxLength="225"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<android.support.design.widget.CoordinatorLayout android:id="@+id/nav_headerview"
+                                                 xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/transparent"
+                                                 android:fitsSystemWindows="true">
+
+    <!--<android.support.v4.widget.NestedScrollView -->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:scrollbarSize="0dp"-->
+    <!--android:orientation="vertical">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingEnd="14dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="14dp"
+            android:paddingStart="16dp">
+
+
+            <com.mhh.lib.view.CircleImageView3
+                android:id="@+id/ivHead"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/defaulthead"
+                app:border_color="@color/white"
+                app:border_width="2dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvMarryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@xml/xml_white_round3_bg"
+                    android:gravity="center"
+                    android:hint="请设置你的婚期"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_gray"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vMarryState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="12dp"
+                android:paddingStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="当前婚礼状态"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvMarryState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+            </FrameLayout>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="#45ffffff"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/menu_1"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/menu_1"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="我的结婚任务"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/menu_2"
+                    android:drawablePadding="4dp"
+                    android:drawableStart="@drawable/menu_2"
+                    android:gravity="center_vertical"
+                    android:text="所在城市"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvLCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:layout_gravity="right"
+                    android:drawableEnd="@drawable/home_arrow"
+                    android:drawableRight="@drawable/home_arrow"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/menu_3"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/menu_3"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="我的收藏"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem_ding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/menu_3"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/menu_3"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="我的订单"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"
+            android:visibility="gone"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/menu_4"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/menu_4"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="我的话题"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/menu_5"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/menu_5"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="关于我们"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+        <com.mhh.lib.widget.RippleView
+            android:id="@+id/vitem_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rv_type="rectangle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_item_height"
+                android:clickable="false"
+                android:drawableEnd="@drawable/home_arrow"
+                android:drawableLeft="@drawable/navbar_icon_share"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/home_arrow"
+                android:drawableStart="@drawable/navbar_icon_share"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="12dp"
+                android:paddingStart="16dp"
+                android:text="分享APP"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"/>
+
+        </com.mhh.lib.widget.RippleView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="#45ffffff"/>
+
+    </LinearLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+</android.support.design.widget.CoordinatorLayout>

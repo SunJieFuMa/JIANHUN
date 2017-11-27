@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/radgp_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_item_shop"
+            style="@style/radioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/tab_home"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/tab_item_car"
+            style="@style/radioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/tab_package"
+            android:text="套餐" />
+
+        <RadioButton
+            android:id="@+id/tab_item_express"
+            style="@style/radioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/tab_demo"
+            android:text="案例" />
+
+        <RadioButton
+            android:id="@+id/tab_item_me"
+            style="@style/radioButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:drawableTop="@drawable/tab_rate"
+            android:text="评价" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="-4.0dip"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.2dip"
+            android:background="#00000000" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+            <Button
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="4.0dip"
+                android:paddingTop="4.0dip"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_bagge"
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:paddingBottom="4.0dip"
+                android:paddingTop="4.0dip" />
+
+            <Button
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="4.0dip"
+                android:paddingTop="4.0dip"
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingBottom="4.0dip"
+                android:paddingTop="4.0dip"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

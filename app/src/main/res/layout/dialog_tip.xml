@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yes_no_bg"
+    android:gravity="center_horizontal"
+    android:minHeight="160dp"
+    android:orientation="vertical"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="22dp"
+        android:paddingRight="22dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/tvBtn"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/green"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:textSize="17sp"
+        android:text="我知道了"
+        android:gravity="center"
+        android:background="@drawable/xml_dialog2_btnbg"
+        android:clickable="true" />
+
+</LinearLayout>

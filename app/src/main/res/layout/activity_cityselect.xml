@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/lib_toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/lv_refreshmoreload_recyclerview" />
+
+        <com.chantyou.janemarried.widget.MyLetterListView
+            android:id="@+id/mLetterListView"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:background="#45efefef" />
+
+        <TextView
+            android:id="@+id/section_toast_text"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:background="@drawable/toast_bg1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

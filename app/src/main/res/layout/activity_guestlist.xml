@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="snap|enterAlways">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/title_height"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@color/c_eeeeee">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/white">
+
+                        <EditText
+                            android:id="@+id/et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:drawableLeft="@drawable/icon_search_red"
+                            android:drawablePadding="6dp"
+                            android:drawableStart="@drawable/icon_search_red"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionSearch"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:hint="输入名字查找座位"
+                            android:paddingEnd="12dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:paddingStart="12dp"
+                            android:textColor="@color/c_ff4163"
+                            android:textColorHint="@color/c_9a9a9a"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvAddUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        android:paddingStart="14dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingEnd="14dp"
+                        android:background="#eeeeee"
+                        android:textColor="@color/c_ff3257"/><!--共几人 桌数几-->
+
+            </LinearLayout>
+
+
+            <include layout="@layout/lib_toolbar" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_eeeeee"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:id="@+id/vLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <space.sye.z.library.widget.RefreshRecyclerView
+                    android:id="@+id/lv_refrecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/vEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_empty"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_no_guestlist"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btnAdd"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:background="@color/c_ff3257"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/c_ff3257"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即添加"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

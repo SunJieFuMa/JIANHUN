@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="act_guide">引导页</string>
+    <string name="act_login">登录</string>
+    <string name="main">简婚首页</string>
+    <string name="main_0">首页</string>
+    <string name="main_1">发现</string>
+    <string name="main_shop">商店</string>
+    <string name="act_mar_info">婚品详情</string>
+    <string name="main_2">备婚助手</string>
+    <string name="main_3">结婚邦</string>
+    <string name="main_add">添加</string>
+    <string name="act_person">个人信息</string>
+    <string name="act_perinfo">个人简介</string>
+    <string name="act_editnickname">编辑昵称</string>
+    <string name="act_mytopic">我的话题</string>
+    <string name="act_myfavorite">我的收藏</string>
+    <string name="fav_item1">婚品</string>
+    <string name="fav_item2">话题</string>
+    <string name="fav_item3">店铺</string>
+    <string name="act_wedpro">婚礼流程</string>
+    <string name="act_addwedpro">添加新流程</string>
+</resources>

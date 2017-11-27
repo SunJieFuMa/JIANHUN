@@ -1,0 +1,35 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_pressed="false">
+        <shape android:shape="oval">
+            <corners android:radius="10dp" />
+
+            <size android:width="16dp"
+                android:height="16dp"/>
+
+            <solid
+                android:color="@color/c_ff4163" />
+
+            <stroke
+                android:width="3dp"
+                android:color="@color/c_line" />
+
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <corners android:radius="10dp" />
+
+            <size android:width="16dp"
+                android:height="16dp"/>
+
+            <solid android:color="@color/c_ff3257" />
+
+            <stroke
+                android:width="3dp"
+                android:color="@color/c_line" />
+
+        </shape>
+    </item>
+</selector>
